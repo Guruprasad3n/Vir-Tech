@@ -1,0 +1,78 @@
+/* Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.modal-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 520px;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  border: 0;
+  background: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+.modal-form input,
+.modal-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e6eefc;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+.form-row input[type="checkbox"] {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+.form-row label {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.modal-actions .btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+.modal-actions .btn.ghost {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 36, 0.06);
+}
+
+.form-row-container {
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

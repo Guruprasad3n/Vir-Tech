@@ -12,14 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-p..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Styles/Modal.css" />
     <script
       src="https://kit.fontawesome.com/a2e0f1a2b8.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header class="site-header">
+    <header ader class="site-header">
       <div class="container header-inner">
         <div class="brand">
           <div class="logo">VT</div>
@@ -143,6 +151,54 @@
         </div>
       </section>
 
+      <section class="container">
+        <h2>What students say</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">KS</div>
+              <div>
+                <div style="font-weight: 700">Karthik S.</div>
+                <div class="muted small">B. Com — Vijayawada</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <p class="muted">
+              "Great course. Clear Telugu explanations and practical projects
+              helped me build a portfolio."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">RC</div>
+              <div>
+                <div style="font-weight: 700">Ravi C.</div>
+                <div class="muted small">Hyderabad</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p class="muted">
+              "Affordable and practical — loved the Power BI sessions."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">PS</div>
+              <div>
+                <div style="font-weight: 700">Priya S.</div>
+                <div class="muted small">Tirupati</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <p class="muted">
+              "Good pace and weekly assignments kept me motivated."
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="container faq-section">
         <h2>Frequently Asked Questions</h2>
         <div id="faqRoot" class="faq-accordion"></div>
@@ -150,9 +206,53 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
+      <div class="container footer-top">
+        <!-- Brand -->
+        <div class="footer-col footer-brand">
+          <div class="logo-circle">VT</div>
+          <div>
+            <div class="brand-name">VirTech Academy</div>
+            <div class="muted">Telugu-first Data Analytics</div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <div class="muted">info@virtech.example</div>
+          <div class="muted">+91 90000 00000</div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-width About -->
+      <div class="footer-about">
+        <strong>About</strong>
+        <p>
+          We train Telugu-speaking students in data analytics — practical,
+          affordable, and project-focused.
+        </p>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
         <div>© 2025 VirTech Academy</div>
-        <div class="footer-links">
+        <div class="footer-policies">
           <a href="/terms.html">Terms & Conditions</a>
           <a href="/privacy.html">Privacy Policy</a>
         </div>
@@ -187,10 +287,10 @@
           <label for="r_message">Message (optional)</label>
           <textarea id="r_message" name="message" rows="3"></textarea>
 
-          <div class="form-row">
+          <div class="form-row form-row-container">
             <input id="r_agree" type="checkbox" required />
-            <label for="r_agree" class="muted small">
-              I agree to the
+            <label for="r_agree" class="muted small"
+              >I agree to the
               <a href="/terms.html" target="_blank"
                 >Terms & Conditions</a
               ></label
@@ -206,8 +306,8 @@
         </form>
       </div>
     </div>
-
     <script src="./faq.js"></script>
     <script src="./script.js"></script>
+    <script src="./ui.js"></script>
   </body>
 </html>

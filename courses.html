@@ -1,42 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Courses — VirTech Academy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand"><div class="logo">VT</div><div class="brand-text"><div class="brand-title">VirTech Academy</div><div class="brand-sub">Telugu-first Data Analytics</div></div></div>
-      <nav class="nav"><a href="/index.html">Home</a><a href="/courses.html">Courses</a><a href="/about.html">About</a><a href="/contact.html">Contact</a></nav>
-      <div class="cta-area"><button class="btn reserve" id="openReserveBtnCourses">Reserve Seat</button></div>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses | VirTech Academy</title>
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="stylesheet" href="./Styles/courses.css" />
+    <link rel="stylesheet" href="./Styles/Modal.css" />
+    <script
+      src="https://kit.fontawesome.com/6dc2a4a2b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header ader class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo">VT</div>
+          <div class="brand-text">
+            <div class="brand-title">VirTech Academy</div>
+            <div class="brand-sub">Telugu-first Data Analytics</div>
+          </div>
+        </div>
 
-  <main class="container">
-    <h1>Our Courses</h1>
+        <nav class="nav">
+          <a href="/index.html">Home</a>
+          <a href="/courses.html">Courses</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+        </nav>
 
-    <section class="card">
-      <h3>Data Analytics From Scratch — 8 Weeks</h3>
-      <p class="muted">Excel, SQL, Power BI, Python basics. Live + recorded, Telugu-first instruction.</p>
-      <ul class="muted">
-        <li>3 portfolio projects</li>
-        <li>Weekly assignments</li>
-        <li>Telegram community</li>
-      </ul>
-      <div style="margin-top:12px">
-        <button class="btn primary" id="enrollCourseBtn">Enroll Now</button>
+        <div class="cta-area">
+          <button class="btn reserve" id="openReserveBtn">
+            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Courses Section -->
+    <section class="courses-section container">
+      <h1>Our Courses</h1>
+      <p class="subtitle">Project-based learning for future data analysts</p>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <i class="fa-solid fa-database"></i>
+          <h3>Data Analytics Bootcamp</h3>
+          <p>
+            Learn Excel, Power BI, SQL, and Python with real-world projects.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <i class="fa-solid fa-chart-line"></i>
+          <h3>Advanced Power BI</h3>
+          <p>
+            Master data visualization, DAX, and dashboards for industry use.
+          </p>
+        </div>
+
+        <div class="course-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Python for Data</h3>
+          <p>
+            Build automation scripts, analyze datasets, and visualize insights.
+          </p>
+        </div>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner"><div>© 2025 VirTech Academy</div><div class="footer-links"><a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a></div></div>
-  </footer>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <!-- Brand -->
+        <div class="footer-col footer-brand">
+          <div class="logo-circle">VT</div>
+          <div>
+            <div class="brand-name">VirTech Academy</div>
+            <div class="muted">Telugu-first Data Analytics</div>
+          </div>
+        </div>
 
-  <script src="./script.js"></script>
-</body>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <div class="muted">info@virtech.example</div>
+          <div class="muted">+91 90000 00000</div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-width About -->
+      <div class="footer-about">
+        <strong>About</strong>
+        <p>
+          We train Telugu-speaking students in data analytics — practical,
+          affordable, and project-focused.
+        </p>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <div>© 2025 VirTech Academy</div>
+        <div class="footer-policies">
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+    <div id="reserveModal" class="modal-overlay" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true">
+        <button class="modal-close" id="modalClose">&times;</button>
+        <h3>Reserve Your Seat</h3>
+        <form id="reserveForm" class="modal-form">
+          <label for="r_name">Full Name *</label>
+          <input id="r_name" name="name" required />
+
+          <label for="r_email">Email *</label>
+          <input id="r_email" name="email" type="email" required />
+
+          <label for="r_phone">Phone / WhatsApp *</label>
+          <input id="r_phone" name="phone" required />
+
+          <label for="r_location">Location (City)</label>
+          <input id="r_location" name="location" />
+
+          <label for="r_message">Message (optional)</label>
+          <textarea id="r_message" name="message" rows="3"></textarea>
+
+          <div class="form-row">
+            <input id="r_agree" type="checkbox" required />
+            <label for="r_agree" class="muted small">
+              I agree to the
+              <a href="/terms.html" target="_blank">Terms & Conditions</a>
+            </label>
+          </div>
+
+          <div class="modal-actions">
+            <button type="submit" class="btn primary">Submit & Reserve</button>
+            <button type="button" class="btn ghost" id="modalCancel">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./faq.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
