@@ -34,7 +34,7 @@ body {
 }
 
 /* Header / nav */
-.site-header {
+/* .site-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -120,7 +120,7 @@ body {
   .nav {
     display: none;
   }
-}
+} */
 
 /* Section base */
 

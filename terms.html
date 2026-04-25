@@ -13,35 +13,10 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./Styles/Modal.css" />
   </head>
 
   <body>
-    <!-- Header -->
-    <header ader class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <div class="logo">VT</div>
-          <div class="brand-text">
-            <div class="brand-title">VirTech Academy</div>
-            <div class="brand-sub">Telugu-first Data Analytics</div>
-          </div>
-        </div>
-
-        <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-
-        <div class="cta-area">
-          <button class="btn reserve" id="openReserveBtn">
-            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
-          </button>
-        </div>
-      </div>
-    </header>
+      <div id="navbar"></div>
 
     <main class="container">
       <section class="card">
@@ -89,9 +64,9 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <!-- <footer class="site-footer">
       <div class="container footer-top">
-        <!-- Brand -->
+      
         <div class="footer-col footer-brand">
           <div class="logo-circle">VT</div>
           <div>
@@ -100,7 +75,6 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
         <div class="footer-col">
           <strong>Quick Links</strong>
           <div class="footer-links">
@@ -111,7 +85,7 @@
           </div>
         </div>
 
-        <!-- Contact -->
+       
         <div class="footer-col">
           <strong>Contact</strong>
           <div class="muted">info@virtech.example</div>
@@ -124,7 +98,7 @@
         </div>
       </div>
 
-      <!-- Full-width About -->
+    
       <div class="footer-about">
         <strong>About</strong>
         <p>
@@ -133,7 +107,7 @@
         </p>
       </div>
 
-      <!-- Bottom -->
+   
       <div class="footer-bottom">
         <div>© 2025 VirTech Academy</div>
         <div class="footer-policies">
@@ -141,9 +115,15 @@
           <a href="/privacy.html">Privacy Policy</a>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
+<div id="footer"></div>
     <script src="./script.js"></script>
+     <script type="module">
+      import { includeHTML } from "./scripts/include.js";
+      includeHTML("#navbar", "./partials/header.html");
+      includeHTML("#footer", "./partials/footer.html");
+    </script>
   </body>
 </html>
 

@@ -13,11 +13,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./Styles/Modal.css" />
+    <!-- <link rel="stylesheet" href="./Styles/Modal.css" /> -->
   </head>
 
   <body>
-   <header ader class="site-header">
+   <!-- <header ader class="site-header">
       <div class="container header-inner">
         <div class="brand">
           <div class="logo">VT</div>
@@ -40,7 +40,7 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <main class="container">
       <section class="card">
@@ -85,62 +85,14 @@
       </section>
     </main>
 
-    <!-- Footer -->
- <footer class="site-footer">
-  <div class="container footer-top">
-    <!-- Brand -->
-    <div class="footer-col footer-brand">
-      <div class="logo-circle">VT</div>
-      <div>
-        <div class="brand-name">VirTech Academy</div>
-        <div class="muted">Telugu-first Data Analytics</div>
-      </div>
-    </div>
 
-    <!-- Quick Links -->
-    <div class="footer-col">
-      <strong>Quick Links</strong>
-      <div class="footer-links">
-        <a href="/index.html">Home</a>
-        <a href="/courses.html">Courses</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <div class="muted">info@virtech.example</div>
-      <div class="muted">+91 90000 00000</div>
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Full-width About -->
-  <div class="footer-about">
-    <strong>About</strong>
-    <p>
-      We train Telugu-speaking students in data analytics — practical,
-      affordable, and project-focused.
-    </p>
-  </div>
-
-  <!-- Bottom -->
-  <div class="footer-bottom">
-    <div>© 2025 VirTech Academy</div>
-    <div class="footer-policies">
-      <a href="/terms.html">Terms & Conditions</a>
-      <a href="/privacy.html">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
-
+<div id="footer"></div>
     <script src="./script.js"></script>
+     <script type="module">
+      import { includeHTML } from "./scripts/include.js";
+      includeHTML("#navbar", "./partials/header.html");
+      includeHTML("#footer", "./partials/footer.html");
+    </script>
   </body>
 </html>
 

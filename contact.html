@@ -13,11 +13,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./Styles/Modal.css" />
+    <!-- <link rel="stylesheet" href="./Styles/Modal.css" /> -->
   </head>
 
   <body>
-    <header ader class="site-header">
+    <!-- <header ader class="site-header">
       <div class="container header-inner">
         <div class="brand">
           <div class="logo">VT</div>
@@ -40,8 +40,9 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
+   <div id="navbar"></div>
     <main class="container">
       <section class="card">
         <h1>Contact Us</h1>
@@ -73,9 +74,9 @@
     </main>
 
     <!-- Footer -->
- <footer class="site-footer">
+ <!-- <footer class="site-footer">
   <div class="container footer-top">
-    <!-- Brand -->
+
     <div class="footer-col footer-brand">
       <div class="logo-circle">VT</div>
       <div>
@@ -84,7 +85,7 @@
       </div>
     </div>
 
-    <!-- Quick Links -->
+  
     <div class="footer-col">
       <strong>Quick Links</strong>
       <div class="footer-links">
@@ -95,7 +96,7 @@
       </div>
     </div>
 
-    <!-- Contact -->
+  
     <div class="footer-col">
       <strong>Contact</strong>
       <div class="muted">info@virtech.example</div>
@@ -108,7 +109,7 @@
     </div>
   </div>
 
-  <!-- Full-width About -->
+  
   <div class="footer-about">
     <strong>About</strong>
     <p>
@@ -117,7 +118,7 @@
     </p>
   </div>
 
-  <!-- Bottom -->
+ 
   <div class="footer-bottom">
     <div>© 2025 VirTech Academy</div>
     <div class="footer-policies">
@@ -125,10 +126,12 @@
       <a href="/privacy.html">Privacy Policy</a>
     </div>
   </div>
-</footer>
+</footer> -->
 
+
+<div id="footer"></div>
     <!-- Modal -->
-    <div id="reserveModal" class="modal-overlay" aria-hidden="true">
+    <!-- <div id="reserveModal" class="modal-overlay" aria-hidden="true">
       <div class="modal-card" role="dialog" aria-modal="true">
         <button class="modal-close" id="modalClose">&times;</button>
         <h3>Reserve Your Seat</h3>
@@ -164,10 +167,15 @@
           </div>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <script src="./faq.js"></script>
     <script src="./script.js"></script>
+    <script type="module">
+      import { includeHTML } from "./scripts/include.js";
+      includeHTML("#navbar", "./partials/header.html");
+      includeHTML("#footer", "./partials/footer.html");
+    </script>
   </body>
 </html>
 

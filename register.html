@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register | VirTech Academy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./Styles/register.css" />
+    <script
+      src="https://kit.fontawesome.com/6dc2a4a2b0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+     <div id="navbar"></div>
+       <!-- <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <div class="logo">VT</div>
+          <div class="brand-text">
+            <div class="brand-title">VirTech Academy</div>
+            <div class="brand-sub">Telugu-first Data Analytics</div>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header> -->
+
+    <!-- Registration Section -->
+   <section class="register-section">
+      <div class="register-container">
+        <div class="register-form">
+          <h1>Join VirTech Academy</h1>
+          <p class="subtitle">
+            Start your journey to becoming a data analytics professional.
+          </p>
+
+          <form>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required />
+              </div>
+
+              <div class="form-group">
+                <label for="qualification">Highest Qualification</label>
+                <select id="qualification" required>
+                  <option value="">Select qualification</option>
+                  <option>12th</option>
+                  <option>Diploma</option>
+                  <option>Graduation</option>
+                  <option>Post Graduation</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="City / Town" required />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+        </div>
+
+        <div class="register-illustration">
+          <img src="./assets/register-hero.webp" alt="Registration Illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+      <div id="footer"></div>
+      <!-- <footer class="site-footer">
+      <div class="container footer-top">
+    
+        <div class="footer-col footer-brand">
+          <div class="logo-circle">VT</div>
+          <div>
+            <div class="brand-name">VirTech Academy</div>
+            <div class="muted">Telugu-first Data Analytics</div>
+          </div>
+        </div>
+
+        
+        <div class="footer-col">
+          <strong>Quick Links</strong>
+          <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/courses.html">Courses</a>
+            <a href="/about.html">About</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+
+      
+        <div class="footer-col">
+          <strong>Contact</strong>
+          <div class="muted">info@virtech.example</div>
+          <div class="muted">+91 90000 00000</div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-about">
+        <strong>About</strong>
+        <p>
+          We train Telugu-speaking students in data analytics — practical,
+          affordable, and project-focused.
+        </p>
+      </div>
+
+     
+      <div class="footer-bottom">
+        <div>© 2025 VirTech Academy</div>
+        <div class="footer-policies">
+          <a href="/terms.html">Terms & Conditions</a>
+          <a href="/privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </footer> -->
+<script type="module">
+      import { includeHTML } from "./scripts/include.js";
+      includeHTML("#navbar", "./partials/header.html");
+      includeHTML("#footer", "./partials/footer.html");
+    </script>  
+
+</body>
+</html>

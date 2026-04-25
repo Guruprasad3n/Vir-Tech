@@ -1,0 +1,129 @@
+/* Background and Layout */
+.register-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #4f46e5, #06b6d4);
+  color: #111827;
+  padding: 80px 20px;
+}
+
+.register-container {
+  display: flex;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 18px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Form Section */
+.register-form {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form h1 {
+  font-size: 2rem;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.register-form .subtitle {
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* Grid Form Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4f46e5;
+}
+
+/* Button */
+.btn-submit {
+  margin-top: 30px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Illustration Section */
+.register-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.register-illustration img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .register-container {
+    flex-direction: column-reverse;
+  }
+
+  .register-form {
+    padding: 40px 30px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .register-illustration img {
+    max-width: 350px;
+  }
+}

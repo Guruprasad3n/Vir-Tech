@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VirTech Academy — Learn Data Analytics (Telugu)</title>
     <meta
       name="description"
-      content="VirTech Academy - Telugu-first Data Analytics course. 8-week live + recordings. Affordable, practical projects."
+      content="VirTech Academy - Telugu-first Data Analytics course. 8-week live + recorded sessions. Affordable, practical projects."
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
@@ -14,20 +14,159 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-p..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./Styles/Modal.css" />
-    <script
-      src="https://kit.fontawesome.com/a2e0f1a2b8.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
+
   <body>
-    <header ader class="site-header">
+    <!-- Navbar placeholder -->
+    <div id="navbar"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>Learn Data Analytics — In Telugu. From Scratch.</h1>
+            <p class="lead">
+              8-week live + recorded course for final-year students and recent
+              graduates. Practical projects, bilingual instruction, and
+              community support.
+            </p>
+            <div class="hero-ctas">
+              <a href="./register.html" class="btn primary">Enroll Now — ₹3,999</a>
+              <a href="./demo.html" class="btn ghost">Watch Free Demo</a>
+            </div>
+            <p class="small">
+              Limited seats • Weekend live classes • Telegram support
+            </p>
+            <p class="telugu">మీ భాషలో డేటా అనలిటిక్స్ — ఇక్కడే నేర్చుకోండి</p>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="./assets/Data analysis-bro.svg"
+              alt="Students learning data analytics"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="features container">
+        <h2>Why VirTech?</h2>
+        <div class="grid features-grid">
+          <div class="feature card">
+            <i class="fa-solid fa-language fa-2x"></i>
+            <h4>Telugu-first instruction</h4>
+            <p>Complex topics explained in Telugu + English tech terms.</p>
+          </div>
+          <div class="feature card">
+            <i class="fa-solid fa-gear fa-2x"></i>
+            <h4>Project-based learning</h4>
+            <p>Build real dashboards and analytics projects for your portfolio.</p>
+          </div>
+          <div class="feature card">
+            <i class="fa-solid fa-wallet fa-2x"></i>
+            <h4>Affordable pricing</h4>
+            <p>Accessible learning designed for Telugu students everywhere.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container course-preview">
+        <h2>Course Syllabus (8 Weeks)</h2>
+        <div class="grid syllabus-grid">
+          <div class="card"><strong>Week 1</strong><div>Excel Basics</div></div>
+          <div class="card"><strong>Week 2</strong><div>Advanced Excel & Dashboards</div></div>
+          <div class="card"><strong>Week 3</strong><div>SQL Basics (SELECT, JOIN)</div></div>
+          <div class="card"><strong>Week 4</strong><div>SQL Advanced (CTE, Window)</div></div>
+          <div class="card"><strong>Week 5</strong><div>Power BI & Data Cleaning</div></div>
+          <div class="card"><strong>Week 6</strong><div>DAX & Dashboard Building</div></div>
+          <div class="card"><strong>Week 7</strong><div>Python for Analytics (Pandas)</div></div>
+          <div class="card"><strong>Week 8</strong><div>Capstone Dashboard Project</div></div>
+        </div>
+      </section>
+
+ 
+      <section class="container reviews">
+        <h2>What Students Say</h2>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">KS</div>
+              <div>
+                <div class="name">Karthik S.</div>
+                <div class="muted small">B.Com — Vijayawada</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <p>"Clear Telugu explanations and practical projects helped me a lot."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">RC</div>
+              <div>
+                <div class="name">Ravi C.</div>
+                <div class="muted small">Hyderabad</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐⭐</div>
+            <p>"Affordable and practical — loved the Power BI sessions."</p>
+          </div>
+
+          <div class="review-card">
+            <div class="review-meta">
+              <div class="avatar">PS</div>
+              <div>
+                <div class="name">Priya S.</div>
+                <div class="muted small">Tirupati</div>
+              </div>
+            </div>
+            <div class="rating">⭐⭐⭐⭐☆</div>
+            <p>"Good pace and weekly tasks kept me consistent."</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer"></div>
+
+    <script type="module">
+      import { includeHTML } from "./scripts/include.js";
+      includeHTML("#navbar", "./partials/header.html");
+      includeHTML("#footer", "./partials/footer.html");
+    </script>
+  </body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>VirTech Academy — Learn Data Analytics (Telugu)</title>
+    <meta
+      name="description"
+      content="VirTech Academy - Telugu-first Data Analytics course. 8-week live + recorded sessions. Affordable, practical projects."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+
+    <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
           <div class="logo">VT</div>
@@ -38,34 +177,32 @@
         </div>
 
         <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </nav>
 
         <div class="cta-area">
-          <button class="btn reserve" id="openReserveBtn">
-            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
-          </button>
+          <a href="./register.html" class="btn primary">Reserve Seat</a>
         </div>
       </div>
     </header>
 
     <main>
+ 
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <h1>Learn Data Analytics — In Telugu. Start from Scratch.</h1>
+            <h1>Learn Data Analytics — In Telugu. From Scratch.</h1>
             <p class="lead">
-              8-week live + recorded course for final-year & recent grads.
-              Practical projects, bilingual instruction, and community support.
+              8-week live + recorded course for final-year students and recent
+              graduates. Practical projects, bilingual instruction, and
+              community support.
             </p>
             <div class="hero-ctas">
-              <button class="btn primary" id="openReserveBtn2">
-                Enroll Now — ₹3,999
-              </button>
-              <a href="/pages/demo.html" class="btn ghost">Watch Free Demo</a>
+              <a href="./register.html" class="btn primary">Enroll Now — ₹3,999</a>
+              <a href="./demo.html" class="btn ghost">Watch Free Demo</a>
             </div>
             <p class="small">
               Limited seats • Weekend live classes • Telegram support
@@ -73,141 +210,97 @@
             <p class="telugu">మీ భాషలో డేటా అనలిటిక్స్ — ఇక్కడే నేర్చుకోండి</p>
           </div>
 
-          <div class="hero-card card">
-            <h3>Course Snapshot</h3>
-            <ul class="muted">
-              <li>Duration: 8 weeks (Weekends)</li>
-              <li>Format: Live + Recordings</li>
-              <li>Batch size: 30 students</li>
-              <li>Tools: Excel, SQL, Power BI, Python</li>
-            </ul>
-            <button class="btn primary full" id="openReserveBtn3">
-              Reserve Seat
-            </button>
+          <div class="hero-image">
+            <img
+              src="./assets/Data analysis-bro.svg"
+              alt="Students learning data analytics"
+            />
           </div>
         </div>
       </section>
 
+  
       <section class="features container">
         <h2>Why VirTech?</h2>
         <div class="grid features-grid">
           <div class="feature card">
             <i class="fa-solid fa-language fa-2x"></i>
             <h4>Telugu-first instruction</h4>
-            <p class="muted">
-              Complex topics explained in Telugu + English tech terms.
-            </p>
+            <p>Complex topics explained in Telugu + English tech terms.</p>
           </div>
           <div class="feature card">
             <i class="fa-solid fa-gear fa-2x"></i>
             <h4>Project-based learning</h4>
-            <p class="muted">
-              Capstone dashboard + two mini projects to build your portfolio.
-            </p>
+            <p>Build real dashboards and analytics projects for your portfolio.</p>
           </div>
           <div class="feature card">
             <i class="fa-solid fa-wallet fa-2x"></i>
             <h4>Affordable pricing</h4>
-            <p class="muted">Designed for Tier-2/3 Telugu students.</p>
+            <p>Accessible learning designed for Telugu students everywhere.</p>
           </div>
         </div>
       </section>
+
 
       <section class="container course-preview">
-        <h2>Course Syllabus (Short)</h2>
+        <h2>Course Syllabus (8 Weeks)</h2>
         <div class="grid syllabus-grid">
-          <div class="card">
-            <strong>Week 1</strong>
-            <div class="muted">Intro & Excel Basics</div>
-          </div>
-          <div class="card">
-            <strong>Week 2</strong>
-            <div class="muted">Advanced Excel & Dashboards</div>
-          </div>
-          <div class="card">
-            <strong>Week 3</strong>
-            <div class="muted">SQL Basics (SELECT, JOIN)</div>
-          </div>
-          <div class="card">
-            <strong>Week 4</strong>
-            <div class="muted">SQL Advanced (CTE, Window)</div>
-          </div>
-          <div class="card">
-            <strong>Week 5</strong>
-            <div class="muted">Power BI intro & cleaning</div>
-          </div>
-          <div class="card">
-            <strong>Week 6</strong>
-            <div class="muted">Power BI DAX & reports</div>
-          </div>
-          <div class="card">
-            <strong>Week 7</strong>
-            <div class="muted">Python for Analytics (Pandas)</div>
-          </div>
-          <div class="card">
-            <strong>Week 8</strong>
-            <div class="muted">Capstone: End-to-end dashboard</div>
-          </div>
+          <div class="card"><strong>Week 1</strong><div>Excel Basics</div></div>
+          <div class="card"><strong>Week 2</strong><div>Advanced Excel & Dashboards</div></div>
+          <div class="card"><strong>Week 3</strong><div>SQL Basics (SELECT, JOIN)</div></div>
+          <div class="card"><strong>Week 4</strong><div>SQL Advanced (CTE, Window)</div></div>
+          <div class="card"><strong>Week 5</strong><div>Power BI & Data Cleaning</div></div>
+          <div class="card"><strong>Week 6</strong><div>DAX & Dashboard Building</div></div>
+          <div class="card"><strong>Week 7</strong><div>Python for Analytics (Pandas)</div></div>
+          <div class="card"><strong>Week 8</strong><div>Capstone Dashboard Project</div></div>
         </div>
       </section>
 
-      <section class="container">
-        <h2>What students say</h2>
+ 
+      <section class="container reviews">
+        <h2>What Students Say</h2>
         <div class="reviews-grid">
           <div class="review-card">
             <div class="review-meta">
               <div class="avatar">KS</div>
               <div>
-                <div style="font-weight: 700">Karthik S.</div>
-                <div class="muted small">B. Com — Vijayawada</div>
+                <div class="name">Karthik S.</div>
+                <div class="muted small">B.Com — Vijayawada</div>
               </div>
             </div>
             <div class="rating">⭐⭐⭐⭐☆</div>
-            <p class="muted">
-              "Great course. Clear Telugu explanations and practical projects
-              helped me build a portfolio."
-            </p>
+            <p>"Clear Telugu explanations and practical projects helped me a lot."</p>
           </div>
 
           <div class="review-card">
             <div class="review-meta">
               <div class="avatar">RC</div>
               <div>
-                <div style="font-weight: 700">Ravi C.</div>
+                <div class="name">Ravi C.</div>
                 <div class="muted small">Hyderabad</div>
               </div>
             </div>
             <div class="rating">⭐⭐⭐⭐⭐</div>
-            <p class="muted">
-              "Affordable and practical — loved the Power BI sessions."
-            </p>
+            <p>"Affordable and practical — loved the Power BI sessions."</p>
           </div>
 
           <div class="review-card">
             <div class="review-meta">
               <div class="avatar">PS</div>
               <div>
-                <div style="font-weight: 700">Priya S.</div>
+                <div class="name">Priya S.</div>
                 <div class="muted small">Tirupati</div>
               </div>
             </div>
             <div class="rating">⭐⭐⭐⭐☆</div>
-            <p class="muted">
-              "Good pace and weekly assignments kept me motivated."
-            </p>
+            <p>"Good pace and weekly tasks kept me consistent."</p>
           </div>
         </div>
-      </section>
-
-      <section class="container faq-section">
-        <h2>Frequently Asked Questions</h2>
-        <div id="faqRoot" class="faq-accordion"></div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-top">
-        <!-- Brand -->
         <div class="footer-col footer-brand">
           <div class="logo-circle">VT</div>
           <div>
@@ -216,18 +309,16 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
         <div class="footer-col">
           <strong>Quick Links</strong>
           <div class="footer-links">
-            <a href="/index.html">Home</a>
-            <a href="/courses.html">Courses</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
 
-        <!-- Contact -->
         <div class="footer-col">
           <strong>Contact</strong>
           <div class="muted">info@virtech.example</div>
@@ -240,74 +331,55 @@
         </div>
       </div>
 
-      <!-- Full-width About -->
       <div class="footer-about">
         <strong>About</strong>
         <p>
           We train Telugu-speaking students in data analytics — practical,
-          affordable, and project-focused.
+          affordable, and project-focused learning.
         </p>
       </div>
 
-      <!-- Bottom -->
       <div class="footer-bottom">
         <div>© 2025 VirTech Academy</div>
         <div class="footer-policies">
-          <a href="/terms.html">Terms & Conditions</a>
-          <a href="/privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms</a>
+          <a href="privacy.html">Privacy</a>
         </div>
       </div>
     </footer>
-
-    <!-- Modal Reserve Seat -->
-    <div id="reserveModal" class="modal-overlay" aria-hidden="true">
-      <div
-        class="modal-card"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="reserveTitle"
-      >
-        <button class="modal-close" id="modalClose" aria-label="Close">
-          &times;
-        </button>
-        <h3 id="reserveTitle">Reserve Your Seat</h3>
-        <form id="reserveForm" class="modal-form">
-          <label for="r_name">Full Name *</label>
-          <input id="r_name" name="name" required />
-
-          <label for="r_email">Email *</label>
-          <input id="r_email" name="email" type="email" required />
-
-          <label for="r_phone">Phone / WhatsApp *</label>
-          <input id="r_phone" name="phone" required />
-
-          <label for="r_location">Location (City)</label>
-          <input id="r_location" name="location" />
-
-          <label for="r_message">Message (optional)</label>
-          <textarea id="r_message" name="message" rows="3"></textarea>
-
-          <div class="form-row form-row-container">
-            <input id="r_agree" type="checkbox" required />
-            <label for="r_agree" class="muted small"
-              >I agree to the
-              <a href="/terms.html" target="_blank"
-                >Terms & Conditions</a
-              ></label
-            >
-          </div>
-
-          <div class="modal-actions">
-            <button type="submit" class="btn primary">Submit & Reserve</button>
-            <button type="button" class="btn ghost" id="modalCancel">
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <script src="./faq.js"></script>
-    <script src="./script.js"></script>
-    <script src="./ui.js"></script>
   </body>
-</html>
+</html> -->
+
+
+    <!-- <script>const reserveForm = document.getElementById('reserveForm');
+const modalClose = document.getElementById('modalClose');
+const modalCancel = document.getElementById('modalCancel');
+
+reserveForm.addEventListener('submit', e => {
+  e.preventDefault();
+
+  // Simple validation for checkbox
+  const agree = document.getElementById('r_agree');
+  if (!agree.checked) {
+    alert('Please agree to the Terms & Conditions.');
+    return;
+  }
+
+  fetch('https://script.google.com/macros/s/AKfycbxxgrrev-3rF9BZ89fnjY_wizxsPCjJ4MqxZioVSVAOV31RhCJK5PhjkG9Kp0vRS9x6/exec', {
+    method: 'POST',
+    body: new FormData(reserveForm)
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.result === 'success') {
+      alert('✅ Reservation submitted successfully!');
+      reserveForm.reset();
+      closeModal();
+    } else {
+      alert('❌ Failed to submit reservation.');
+    }
+  })
+  .catch(err => alert('Error: ' + err.message));
+});
+
+</script> -->
