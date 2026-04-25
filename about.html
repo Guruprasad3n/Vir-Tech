@@ -2,240 +2,292 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About — VirTech Academy</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a2e0f1a2b8.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="description" content="Learn about VirTech Academy's mission, founding team, and vision for Telugu-first data analytics education." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
-   
+    <link rel="stylesheet" href="./Styles/about.css" />
   </head>
-
   <body>
-    <!-- Header -->
-    <!-- <header ader class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
+
+    <!-- ── Navbar ── -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
           <div class="logo">VT</div>
           <div class="brand-text">
             <div class="brand-title">VirTech Academy</div>
             <div class="brand-sub">Telugu-first Data Analytics</div>
           </div>
-        </div>
-
+        </a>
         <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-
-        <div class="cta-area">
-          <button class="btn reserve" id="openReserveBtn">
-            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
-          </button>
-        </div>
-      </div>
-    </header> -->
-<div id="navbar"></div>
-    <main class="container">
-      <section class="about-section card">
-        <h1>About VirTech Academy</h1>
-        <p class="muted">
-          We are a 4-member founding team building practical, affordable analytics
-          training for Telugu-speaking graduates. Our mission is to make
-          industry-ready data skills accessible to all, regardless of location or background.
-        </p>
-      </section>
-
-      <section class="team-section card">
-        <h2>Founders</h2>
-        <div class="grid">
-          <div class="card"><i class="fa-solid fa-user-tie"></i> Founder 1 — CEO</div>
-          <div class="card"><i class="fa-solid fa-chalkboard-user"></i> Founder 2 — Academic Head</div>
-          <div class="card"><i class="fa-solid fa-bullhorn"></i> Founder 3 — Marketing</div>
-          <div class="card"><i class="fa-solid fa-laptop-code"></i> Founder 4 — Tech</div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-  <!-- <footer class="site-footer">
-  <div class="container footer-top">
- 
-    <div class="footer-col footer-brand">
-      <div class="logo-circle">VT</div>
-      <div>
-        <div class="brand-name">VirTech Academy</div>
-        <div class="muted">Telugu-first Data Analytics</div>
-      </div>
-    </div>
-
-   
-    <div class="footer-col">
-      <strong>Quick Links</strong>
-      <div class="footer-links">
-        <a href="/index.html">Home</a>
-        <a href="/courses.html">Courses</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-    </div>
-
- 
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <div class="muted">info@virtech.example</div>
-      <div class="muted">+91 90000 00000</div>
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-      </div>
-    </div>
-  </div>
-
- 
-  <div class="footer-about">
-    <strong>About</strong>
-    <p>
-      We train Telugu-speaking students in data analytics — practical,
-      affordable, and project-focused.
-    </p>
-  </div>
-
-
-  <div class="footer-bottom">
-    <div>© 2025 VirTech Academy</div>
-    <div class="footer-policies">
-      <a href="/terms.html">Terms & Conditions</a>
-      <a href="/privacy.html">Privacy Policy</a>
-    </div>
-  </div>
-</footer> -->
-
-
-<div id="footer"></div>
-    <!-- Modal -->
-    <!-- <div id="reserveModal" class="modal-overlay" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <h3>Reserve Your Seat</h3>
-        <form id="reserveForm" class="modal-form">
-          <label for="r_name">Full Name *</label>
-          <input id="r_name" name="name" required />
-
-          <label for="r_email">Email *</label>
-          <input id="r_email" name="email" type="email" required />
-
-          <label for="r_phone">Phone / WhatsApp *</label>
-          <input id="r_phone" name="phone" required />
-
-          <label for="r_location">Location (City)</label>
-          <input id="r_location" name="location" />
-
-          <label for="r_message">Message (optional)</label>
-          <textarea id="r_message" name="message" rows="3"></textarea>
-
-          <div class="form-row">
-            <input id="r_agree" type="checkbox" required />
-            <label for="r_agree" class="muted small">
-              I agree to the <a href="/terms.html" target="_blank">Terms & Conditions</a>
-            </label>
-          </div>
-
-          <div class="modal-actions">
-            <button type="submit" class="btn primary">Submit & Reserve</button>
-            <button type="button" class="btn ghost" id="modalCancel">Cancel</button>
-          </div>
-        </form>
-      </div>
-    </div> -->
-
-    <script src="./faq.js"></script>
-    <script src="./script.js"></script>
-
-    <script type="module">
-      import { includeHTML } from "./scripts/include.js";
-      includeHTML("#navbar", "./partials/header.html");
-      includeHTML("#footer", "./partials/footer.html");
-    </script>
-  </body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About — VirTech Academy</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-p..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <div class="logo">VT</div>
-          <div class="brand-text">
-            <div class="brand-title">VirTech Academy</div>
-            <div class="brand-sub">Telugu-first Data Analytics</div>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
         </nav>
         <div class="cta-area">
-          <a class="btn reserve" href="/index.html#reserve">Reserve Seat</a>
+          <a href="register.html" class="btn primary">Reserve Seat</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn primary" style="margin-top:8px;">Reserve Seat</a>
+      </nav>
     </header>
 
-    <main class="container">
-      <h1>About VirTech Academy</h1>
-      <p class="muted">
-        We are a 4-member founding team building practical, affordable analytics
-        training for Telugu-speaking graduates.
-      </p>
+    <main>
 
-      <section class="card team">
-        <h3>Founders</h3>
-        <div class="grid">
-          <div class="card">Founder 1 — CEO</div>
-          <div class="card">Founder 2 — Academic Head</div>
-          <div class="card">Founder 3 — Marketing</div>
-          <div class="card">Founder 4 — Tech</div>
+      <!-- ── Page Hero ── -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-label">Our Story</span>
+          <h1>Building Data Skills for<br>Telugu Graduates</h1>
+          <p>We are a passionate 4-member team on a mission to make industry-ready data analytics education accessible to every Telugu-speaking student — regardless of location or background.</p>
         </div>
       </section>
+
+      <!-- ── Mission & Vision ── -->
+      <section class="mission-section">
+        <div class="container mission-grid">
+          <div class="mission-card">
+            <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality, practical data analytics training in Telugu — making complex skills understandable, affordable, and directly applicable to real-world jobs for graduates across Andhra Pradesh and Telangana.</p>
+          </div>
+          <div class="mission-card">
+            <div class="mission-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>To become the #1 Telugu-language data education platform, helping 10,000+ students build career-changing skills over the next 3 years — bridging the language gap in tech education.</p>
+          </div>
+          <div class="mission-card">
+            <div class="mission-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Our Values</h3>
+            <p>Clarity over complexity. Telugu first, always. Practical over theoretical. Community over competition. Affordable access to quality education — these aren't slogans, they're our operating principles.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Story ── -->
+      <section class="story-section">
+        <div class="container story-inner">
+          <div class="story-text">
+            <span class="section-label">How We Started</span>
+            <h2 class="section-title">Born from a Real Problem</h2>
+            <p>We were four friends — engineers, marketers, and educators — who watched talented Telugu graduates struggle to break into data careers, not because they lacked intelligence, but because all quality content was in English.</p>
+            <p style="margin-top:14px;">We started recording Telugu explanations for Excel and SQL on a WhatsApp group. Within 3 weeks, the group had 200 members asking for more. That's when we knew VirTech Academy wasn't just an idea — it was a need.</p>
+            <p style="margin-top:14px;">Today we've trained 500+ students across Andhra Pradesh, Telangana, and even Telugu diaspora in the US and UK. Every class, every project, every doubt session — still in Telugu.</p>
+          </div>
+          <div class="story-stats">
+            <div class="story-stat">
+              <span class="big-num">500+</span>
+              <span>Students Trained</span>
+            </div>
+            <div class="story-stat">
+              <span class="big-num">4.8★</span>
+              <span>Average Rating</span>
+            </div>
+            <div class="story-stat">
+              <span class="big-num">2</span>
+              <span>Batches Completed</span>
+            </div>
+            <div class="story-stat">
+              <span class="big-num">100%</span>
+              <span>Telugu Instruction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Team ── -->
+      <section class="team-section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:44px;">
+            <span class="section-label">Meet the Team</span>
+            <h2 class="section-title">The Founding Four</h2>
+            <p class="section-sub" style="margin:0 auto;">Four people, one mission — make data skills accessible to every Telugu graduate.</p>
+          </div>
+          <div class="team-grid">
+
+            <div class="team-card">
+              <div class="team-avatar ceo">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <h4>Founder 1</h4>
+              <div class="team-role">CEO & Co-founder</div>
+              <p>Leads the overall vision, partnerships, and growth strategy of VirTech Academy. 5+ years in EdTech and business development.</p>
+              <div class="team-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-avatar academic">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h4>Founder 2</h4>
+              <div class="team-role">Academic Head & Lead Instructor</div>
+              <p>Designs the curriculum and delivers live sessions. 6+ years of industry experience in data analytics and BI tools.</p>
+              <div class="team-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-avatar marketing">
+                <i class="fa-solid fa-bullhorn"></i>
+              </div>
+              <h4>Founder 3</h4>
+              <div class="team-role">Head of Marketing & Community</div>
+              <p>Manages student acquisition, brand presence, and our 2,000+ member Telegram community. Makes sure no student feels alone.</p>
+              <div class="team-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+
+            <div class="team-card">
+              <div class="team-avatar tech">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h4>Founder 4</h4>
+              <div class="team-role">Head of Technology</div>
+              <p>Builds and maintains all platform infrastructure, tools, and learning systems. Ensures seamless live class delivery every weekend.</p>
+              <div class="team-socials">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Why We're Different ── -->
+      <section class="diff-section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:40px;">
+            <span class="section-label">What Sets Us Apart</span>
+            <h2 class="section-title">The VirTech Difference</h2>
+          </div>
+          <div class="diff-grid">
+            <div class="diff-item">
+              <i class="fa-solid fa-language"></i>
+              <div>
+                <h4>Native Language First</h4>
+                <p>When you understand in your own language, you learn 3x faster. That's not a claim — it's what our students tell us.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+              <div>
+                <h4>Radically Affordable</h4>
+                <p>Quality shouldn't cost a fortune. Our full bootcamp costs less than one month's EMI of many overpriced bootcamps.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h4>Job-Ready from Day 1</h4>
+                <p>Every session ties back to what employers actually ask in interviews. No fluff, no theory-only — only practical skills.</p>
+              </div>
+            </div>
+            <div class="diff-item">
+              <i class="fa-solid fa-people-group"></i>
+              <div>
+                <h4>A Real Community</h4>
+                <p>Our Telegram group is active, supportive, and answered by instructors. You're never stuck alone at 11pm before a deadline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA ── -->
+      <section class="cta-strip">
+        <div class="container cta-strip-inner">
+          <h2>Want to Learn With Us?</h2>
+          <p>Join our next batch and get hands-on with real data analytics in Telugu.</p>
+          <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+            <a href="register.html" class="btn primary"><i class="fa-solid fa-rocket"></i> Enroll Now</a>
+            <a href="contact.html" class="btn ghost">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
     </main>
 
+    <!-- ── Footer ── -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>© 2025 VirTech Academy</div>
-        <div class="footer-links">
-          <a href="/terms.html">Terms & Conditions</a
-          ><a href="/privacy.html">Privacy Policy</a>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <div class="logo-circle">VT</div>
+            <div class="brand-name">VirTech Academy</div>
+            <p>Telugu-first data analytics education for graduates and working professionals across Andhra Pradesh and Telangana.</p>
+            <div class="socials">
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Quick Links</strong>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="courses.html">Courses</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="register.html">Enroll Now</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Courses</strong>
+            <div class="footer-links">
+              <a href="courses.html">Data Analytics Bootcamp</a>
+              <a href="courses.html">Advanced Power BI</a>
+              <a href="courses.html">Python for Data</a>
+              <a href="courses.html">SQL Mastery</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Contact</strong>
+            <div class="footer-links">
+              <a href="mailto:info@virtech.academy"><i class="fa-solid fa-envelope" style="margin-right:6px;"></i>info@virtech.academy</a>
+              <a href="tel:+919000000000"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>+91 90000 00000</a>
+              <a href="#"><i class="fa-solid fa-location-dot" style="margin-right:6px;"></i>Hyderabad, India</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 VirTech Academy. All rights reserved.</span>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+      });
+    </script>
   </body>
-</html> -->
+</html>

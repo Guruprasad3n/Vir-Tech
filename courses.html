@@ -4,173 +4,345 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses | VirTech Academy</title>
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <link rel="stylesheet" href="./Styles/courses.css" />
+    <meta name="description" content="Explore VirTech Academy's data analytics courses taught in Telugu — Excel, SQL, Power BI, Python and more." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- <link rel="stylesheet" href="./Styles/Modal.css" /> -->
-    <script
-      src="https://kit.fontawesome.com/6dc2a4a2b0.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="./Styles/courses.css" />
   </head>
   <body>
-    <!-- <header ader class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
+
+    <!-- ── Navbar ── -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
           <div class="logo">VT</div>
           <div class="brand-text">
             <div class="brand-title">VirTech Academy</div>
             <div class="brand-sub">Telugu-first Data Analytics</div>
           </div>
-        </div>
-
+        </a>
         <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
         </nav>
-
         <div class="cta-area">
-          <button class="btn reserve" id="openReserveBtn">
-            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
-          </button>
+          <a href="register.html" class="btn primary">Reserve Seat</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header> -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn primary" style="margin-top:8px;">Reserve Seat</a>
+      </nav>
+    </header>
 
- 
- <div id="navbar"></div>
-    <!-- Courses Section -->
-    <section class="courses-section container">
-      <h1>Our Courses</h1>
-      <p class="subtitle">Project-based learning for future data analysts</p>
+    <main>
 
-      <div class="course-grid">
-        <div class="course-card">
-          <i class="fa-solid fa-database"></i>
-          <h3>Data Analytics Bootcamp</h3>
-          <p>
-            Learn Excel, Power BI, SQL, and Python with real-world projects.
-          </p>
+      <!-- ── Page Hero ── -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-label">Our Programs</span>
+          <h1>Courses Built for<br>Telugu Learners</h1>
+          <p>Project-based, industry-aligned data analytics training — explained in Telugu so every concept clicks.</p>
         </div>
+      </section>
 
-        <div class="course-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>Advanced Power BI</h3>
-          <p>
-            Master data visualization, DAX, and dashboards for industry use.
-          </p>
+      <!-- ── Main Courses ── -->
+      <section class="courses-section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:40px;">
+            <span class="section-label">Available Courses</span>
+            <h2 class="section-title">Choose Your Learning Path</h2>
+            <p class="section-sub" style="margin:0 auto;">All courses include live sessions, recorded videos, assignments, and community support.</p>
+          </div>
+
+          <div class="courses-grid">
+
+            <!-- Course 1 — Featured -->
+            <div class="course-card featured-course">
+              <div class="course-badge">Most Popular</div>
+              <div class="course-icon"><i class="fa-solid fa-database"></i></div>
+              <div class="course-tag">Beginner → Advanced</div>
+              <h3>Data Analytics Bootcamp</h3>
+              <p>The complete 8-week program covering Excel, SQL, Power BI, and Python — everything you need to become job-ready as a data analyst.</p>
+              <ul class="course-topics">
+                <li><i class="fa-solid fa-check"></i> Excel & Advanced Dashboards</li>
+                <li><i class="fa-solid fa-check"></i> SQL (Basic + Advanced)</li>
+                <li><i class="fa-solid fa-check"></i> Power BI & DAX</li>
+                <li><i class="fa-solid fa-check"></i> Python (Pandas, Matplotlib)</li>
+                <li><i class="fa-solid fa-check"></i> Capstone Portfolio Project</li>
+                <li><i class="fa-solid fa-check"></i> Certificate of Completion</li>
+              </ul>
+              <div class="course-meta">
+                <div class="meta-item"><i class="fa-solid fa-clock"></i> 8 Weeks</div>
+                <div class="meta-item"><i class="fa-solid fa-video"></i> Live + Recorded</div>
+                <div class="meta-item"><i class="fa-solid fa-users"></i> Community</div>
+              </div>
+              <div class="course-footer">
+                <div class="price">₹3,999 <span class="price-original">₹6,999</span></div>
+                <a href="register.html" class="btn primary">Enroll Now</a>
+              </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="course-card">
+              <div class="course-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="course-tag">Intermediate</div>
+              <h3>Advanced Power BI</h3>
+              <p>Master data visualization, advanced DAX formulas, and professional dashboard design for business use cases.</p>
+              <ul class="course-topics">
+                <li><i class="fa-solid fa-check"></i> Power Query & Data Cleaning</li>
+                <li><i class="fa-solid fa-check"></i> Advanced DAX Formulas</li>
+                <li><i class="fa-solid fa-check"></i> KPI Cards & Drill-Throughs</li>
+                <li><i class="fa-solid fa-check"></i> Row-Level Security</li>
+                <li><i class="fa-solid fa-check"></i> Publishing & Sharing Reports</li>
+              </ul>
+              <div class="course-meta">
+                <div class="meta-item"><i class="fa-solid fa-clock"></i> 4 Weeks</div>
+                <div class="meta-item"><i class="fa-solid fa-video"></i> Live + Recorded</div>
+              </div>
+              <div class="course-footer">
+                <div class="price">₹1,999 <span class="price-original">₹3,499</span></div>
+                <a href="register.html" class="btn outline">Enroll Now</a>
+              </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="course-card">
+              <div class="course-icon"><i class="fa-brands fa-python"></i></div>
+              <div class="course-tag">Beginner Friendly</div>
+              <h3>Python for Data</h3>
+              <p>Build automation scripts, analyse datasets, and create data visualizations using Python — no prior coding experience needed.</p>
+              <ul class="course-topics">
+                <li><i class="fa-solid fa-check"></i> Python Fundamentals</li>
+                <li><i class="fa-solid fa-check"></i> Pandas & NumPy</li>
+                <li><i class="fa-solid fa-check"></i> Data Cleaning Workflows</li>
+                <li><i class="fa-solid fa-check"></i> Matplotlib & Seaborn</li>
+                <li><i class="fa-solid fa-check"></i> Mini Analytics Projects</li>
+              </ul>
+              <div class="course-meta">
+                <div class="meta-item"><i class="fa-solid fa-clock"></i> 4 Weeks</div>
+                <div class="meta-item"><i class="fa-solid fa-video"></i> Live + Recorded</div>
+              </div>
+              <div class="course-footer">
+                <div class="price">₹1,999 <span class="price-original">₹3,499</span></div>
+                <a href="register.html" class="btn outline">Enroll Now</a>
+              </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card">
+              <div class="course-icon"><i class="fa-solid fa-server"></i></div>
+              <div class="course-tag">Beginner → Intermediate</div>
+              <h3>SQL Mastery</h3>
+              <p>Go from zero SQL knowledge to writing complex queries using CTEs, window functions, and performance optimization techniques.</p>
+              <ul class="course-topics">
+                <li><i class="fa-solid fa-check"></i> SELECT, JOIN, GROUP BY</li>
+                <li><i class="fa-solid fa-check"></i> Subqueries & CTEs</li>
+                <li><i class="fa-solid fa-check"></i> Window Functions</li>
+                <li><i class="fa-solid fa-check"></i> Real Interview Questions</li>
+                <li><i class="fa-solid fa-check"></i> Hands-on Projects</li>
+              </ul>
+              <div class="course-meta">
+                <div class="meta-item"><i class="fa-solid fa-clock"></i> 3 Weeks</div>
+                <div class="meta-item"><i class="fa-solid fa-video"></i> Recorded</div>
+              </div>
+              <div class="course-footer">
+                <div class="price">₹999 <span class="price-original">₹1,999</span></div>
+                <a href="register.html" class="btn outline">Enroll Now</a>
+              </div>
+            </div>
+
+          </div>
         </div>
+      </section>
 
-        <div class="course-card">
-          <i class="fa-solid fa-code"></i>
-          <h3>Python for Data</h3>
-          <p>
-            Build automation scripts, analyze datasets, and visualize insights.
-          </p>
+      <!-- ── What's Included ── -->
+      <section class="included-section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:40px;">
+            <span class="section-label">Every Course Includes</span>
+            <h2 class="section-title">What You Get</h2>
+          </div>
+          <div class="included-grid">
+            <div class="included-item">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <h4>Live Weekend Classes</h4>
+              <p>Interactive live sessions with Q&A every weekend.</p>
+            </div>
+            <div class="included-item">
+              <i class="fa-solid fa-film"></i>
+              <h4>Recorded Videos</h4>
+              <p>Lifetime access to all recorded session replays.</p>
+            </div>
+            <div class="included-item">
+              <i class="fa-brands fa-telegram"></i>
+              <h4>Telegram Community</h4>
+              <p>24/7 doubt clearing in an active student group.</p>
+            </div>
+            <div class="included-item">
+              <i class="fa-solid fa-file-code"></i>
+              <h4>Practice Assignments</h4>
+              <p>Weekly tasks to reinforce every concept you learn.</p>
+            </div>
+            <div class="included-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <h4>Portfolio Projects</h4>
+              <p>Real-world projects to add to your resume.</p>
+            </div>
+            <div class="included-item">
+              <i class="fa-solid fa-certificate"></i>
+              <h4>Certificate</h4>
+              <p>Verified completion certificate for every course.</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <div id="footer"></div>
+      </section>
 
-    <!-- Footer -->
-    <!-- <footer class="site-footer">
-      <div class="container footer-top">
-    
-        <div class="footer-col footer-brand">
-          <div class="logo-circle">VT</div>
-          <div>
+      <!-- ── FAQ ── -->
+      <section class="faq-section">
+        <div class="container">
+          <div class="text-center" style="margin-bottom:40px;">
+            <span class="section-label">FAQs</span>
+            <h2 class="section-title">Common Questions</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">
+                Do I need any prior experience to join?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-a">
+                <p>No prior experience is required for the Data Analytics Bootcamp. We start from absolute basics — Excel, then SQL, then Power BI, then Python. If you can use a computer, you're ready.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">
+                Are classes taught in Telugu?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-a">
+                <p>Yes! All live classes are delivered primarily in Telugu. Technical terms (like SQL, DAX, Pandas) are used in English as they are in the industry, but all explanations, examples, and Q&A are in Telugu.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">
+                What if I miss a live class?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-a">
+                <p>All live sessions are recorded and uploaded within 24 hours. You'll have lifetime access to all recordings, so you'll never fall behind.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">
+                Is there a refund policy?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-a">
+                <p>We offer a 7-day money-back guarantee. If you're not satisfied after attending the first week of classes, contact us and we'll process a full refund — no questions asked.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-q" onclick="toggleFaq(this)">
+                Will I get placement assistance?
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <div class="faq-a">
+                <p>We provide resume review, mock interview tips, and portfolio guidance. While we don't guarantee placement, our students are actively placed through our alumni network and community connections.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA ── -->
+      <section class="cta-strip">
+        <div class="container cta-strip-inner">
+          <h2>Start Your Data Journey Today</h2>
+          <p>Batch 2 seats are filling fast. Secure yours before they're gone.</p>
+          <a href="register.html" class="btn primary"><i class="fa-solid fa-rocket"></i> Enroll Now — ₹3,999</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <div class="logo-circle">VT</div>
             <div class="brand-name">VirTech Academy</div>
-            <div class="muted">Telugu-first Data Analytics</div>
+            <p>Telugu-first data analytics education for graduates and working professionals across Andhra Pradesh and Telangana.</p>
+            <div class="socials">
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Quick Links</strong>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="courses.html">Courses</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="register.html">Enroll Now</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Courses</strong>
+            <div class="footer-links">
+              <a href="courses.html">Data Analytics Bootcamp</a>
+              <a href="courses.html">Advanced Power BI</a>
+              <a href="courses.html">Python for Data</a>
+              <a href="courses.html">SQL Mastery</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Contact</strong>
+            <div class="footer-links">
+              <a href="mailto:info@virtech.academy"><i class="fa-solid fa-envelope" style="margin-right:6px;"></i>info@virtech.academy</a>
+              <a href="tel:+919000000000"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>+91 90000 00000</a>
+              <a href="#"><i class="fa-solid fa-location-dot" style="margin-right:6px;"></i>Hyderabad, India</a>
+            </div>
           </div>
         </div>
-
-       
-        <div class="footer-col">
-          <strong>Quick Links</strong>
-          <div class="footer-links">
-            <a href="/index.html">Home</a>
-            <a href="/courses.html">Courses</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-          </div>
-        </div>
-
-  
-        <div class="footer-col">
-          <strong>Contact</strong>
-          <div class="muted">info@virtech.example</div>
-          <div class="muted">+91 90000 00000</div>
-          <div class="socials">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <div class="footer-bottom">
+          <span>© 2025 VirTech Academy. All rights reserved.</span>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
           </div>
         </div>
       </div>
+    </footer>
 
-     
-      <div class="footer-about">
-        <strong>About</strong>
-        <p>
-          We train Telugu-speaking students in data analytics — practical,
-          affordable, and project-focused.
-        </p>
-      </div>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+      });
 
-    
-      <div class="footer-bottom">
-        <div>© 2025 VirTech Academy</div>
-        <div class="footer-policies">
-          <a href="/terms.html">Terms & Conditions</a>
-          <a href="/privacy.html">Privacy Policy</a>
-        </div>
-      </div>
-    </footer> -->
-    <!-- <div id="reserveModal" class="modal-overlay" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <h3>Reserve Your Seat</h3>
-        <form id="reserveForm" class="modal-form">
-          <label for="r_name">Full Name *</label>
-          <input id="r_name" name="name" required />
-
-          <label for="r_email">Email *</label>
-          <input id="r_email" name="email" type="email" required />
-
-          <label for="r_phone">Phone / WhatsApp *</label>
-          <input id="r_phone" name="phone" required />
-
-          <label for="r_location">Location (City)</label>
-          <input id="r_location" name="location" />
-
-          <label for="r_message">Message (optional)</label>
-          <textarea id="r_message" name="message" rows="3"></textarea>
-
-          <div class="form-row">
-            <input id="r_agree" type="checkbox" required />
-            <label for="r_agree" class="muted small">
-              I agree to the
-              <a href="/terms.html" target="_blank">Terms & Conditions</a>
-            </label>
-          </div>
-
-          <div class="modal-actions">
-            <button type="submit" class="btn primary">Submit & Reserve</button>
-            <button type="button" class="btn ghost" id="modalCancel">
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div>
-    </div> -->
-    <script src="./faq.js"></script>
-    <script src="./script.js"></script>
-    <script type="module">
-      import { includeHTML } from "./scripts/include.js";
-      includeHTML("#navbar", "./partials/header.html");
-      includeHTML("#footer", "./partials/footer.html");
+      function toggleFaq(btn) {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      }
     </script>
   </body>
 </html>

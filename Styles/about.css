@@ -1,0 +1,177 @@
+/* ============================================
+   VirTech Academy — About Page Styles
+   ============================================ */
+
+.page-hero {
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.page-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  margin: 12px 0;
+  line-height: 1.2;
+}
+.page-hero p {
+  font-size: 1rem;
+  opacity: 0.92;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.page-hero .section-label {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+/* ── Mission ── */
+.mission-section { background: var(--bg); }
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.mission-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 30px 24px;
+  border: 1px solid rgba(15,23,42,0.06);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.mission-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.mission-icon {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: rgba(79,70,229,0.1);
+  color: var(--accent);
+  display: grid; place-items: center;
+  font-size: 1.5rem;
+  margin: 0 auto 18px;
+}
+.mission-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 10px; }
+.mission-card p { color: var(--muted); font-size: 14.5px; line-height: 1.7; }
+
+/* ── Story ── */
+.story-section { background: #fff; }
+.story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.story-text h2 { margin-bottom: 16px; }
+.story-text p { color: var(--muted); font-size: 15px; line-height: 1.75; }
+.story-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.story-stat {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(15,23,42,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.story-stat .big-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+.story-stat span:last-child { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+/* ── Team ── */
+.team-section { background: var(--bg); }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.team-card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(15,23,42,0.06);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.team-avatar {
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: 1.8rem;
+  margin: 0 auto 16px;
+}
+.team-avatar.ceo { background: rgba(79,70,229,0.12); color: #4f46e5; }
+.team-avatar.academic { background: rgba(6,182,212,0.12); color: #06b6d4; }
+.team-avatar.marketing { background: rgba(245,158,11,0.12); color: #f59e0b; }
+.team-avatar.tech { background: rgba(16,185,129,0.12); color: #10b981; }
+.team-card h4 { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+.team-role { font-size: 12.5px; color: var(--accent); font-weight: 600; margin-bottom: 12px; }
+.team-card p { color: var(--muted); font-size: 13.5px; line-height: 1.6; margin-bottom: 16px; }
+.team-socials { display: flex; justify-content: center; gap: 8px; }
+.team-socials a {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: rgba(79,70,229,0.07);
+  color: var(--accent);
+  display: grid; place-items: center;
+  font-size: 13px;
+  transition: background 0.2s, color 0.2s;
+}
+.team-socials a:hover { background: var(--accent); color: #fff; }
+
+/* ── Diff ── */
+.diff-section { background: #fff; }
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.diff-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  border: 1px solid rgba(15,23,42,0.06);
+}
+.diff-item > i {
+  font-size: 1.6rem;
+  color: var(--accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+.diff-item h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+.diff-item p { color: var(--muted); font-size: 13.5px; line-height: 1.6; }
+
+/* ── CTA Strip (shared) ── */
+.cta-strip { background: linear-gradient(135deg, #4f46e5, #06b6d4); color: #fff; }
+.cta-strip-inner { text-align: center; padding: 60px 20px; }
+.cta-strip h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 10px; }
+.cta-strip p { opacity: 0.9; margin-bottom: 28px; font-size: 1rem; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .mission-grid { grid-template-columns: 1fr; }
+  .story-inner { grid-template-columns: 1fr; gap: 36px; }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .diff-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .team-grid { grid-template-columns: 1fr; }
+  .story-stats { grid-template-columns: 1fr 1fr; }
+}

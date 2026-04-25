@@ -3,149 +3,253 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register | VirTech Academy</title>
+    <title>Enroll Now | VirTech Academy</title>
+    <meta name="description" content="Reserve your seat in VirTech Academy's Data Analytics Bootcamp — taught in Telugu. Batch 2 now open." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./Styles/register.css" />
-    <script
-      src="https://kit.fontawesome.com/6dc2a4a2b0.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
-
   <body>
-    <!-- Header -->
-     <div id="navbar"></div>
-       <!-- <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
+
+    <!-- ── Navbar ── -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
           <div class="logo">VT</div>
           <div class="brand-text">
             <div class="brand-title">VirTech Academy</div>
             <div class="brand-sub">Telugu-first Data Analytics</div>
           </div>
-        </div>
-
+        </a>
         <nav class="nav">
-          <a href="index.html" class="active">Home</a>
+          <a href="index.html">Home</a>
           <a href="courses.html">Courses</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
+        <div class="cta-area">
+          <a href="register.html" class="btn primary">Reserve Seat</a>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header> -->
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-    <!-- Registration Section -->
-   <section class="register-section">
-      <div class="register-container">
-        <div class="register-form">
-          <h1>Join VirTech Academy</h1>
-          <p class="subtitle">
-            Start your journey to becoming a data analytics professional.
-          </p>
+    <main>
+      <section class="register-section">
+        <div class="register-wrapper">
 
-          <form>
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="Enter your full name" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required />
-              </div>
-
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Enter your phone number" required />
-              </div>
-
-              <div class="form-group">
-                <label for="qualification">Highest Qualification</label>
-                <select id="qualification" required>
-                  <option value="">Select qualification</option>
-                  <option>12th</option>
-                  <option>Diploma</option>
-                  <option>Graduation</option>
-                  <option>Post Graduation</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="location">Location</label>
-                <input type="text" id="location" placeholder="City / Town" required />
-              </div>
+          <!-- Left — Form -->
+          <div class="register-form-box">
+            <div class="register-header">
+              <span class="section-label">Batch 2 — Limited Seats</span>
+              <h1>Reserve Your Seat</h1>
+              <p>Fill in your details below. We'll confirm your enrollment within 24 hours via WhatsApp.</p>
             </div>
 
-            <button type="submit" class="btn-submit">Submit Registration</button>
-          </form>
-        </div>
+            <div class="reg-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-name">Full Name *</label>
+                  <input type="text" id="r-name" placeholder="As per your ID" required />
+                </div>
+                <div class="form-group">
+                  <label for="r-email">Email Address *</label>
+                  <input type="email" id="r-email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-phone">WhatsApp Number *</label>
+                  <input type="tel" id="r-phone" placeholder="+91 XXXXX XXXXX" required />
+                </div>
+                <div class="form-group">
+                  <label for="r-city">City *</label>
+                  <input type="text" id="r-city" placeholder="Your city" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="r-qual">Qualification *</label>
+                  <select id="r-qual">
+                    <option value="" disabled selected>Select qualification</option>
+                    <option>B.Com</option>
+                    <option>BBA</option>
+                    <option>B.Tech / B.E.</option>
+                    <option>BSc</option>
+                    <option>MBA / PGDM</option>
+                    <option>Working Professional</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="r-course">Course *</label>
+                  <select id="r-course">
+                    <option value="" disabled selected>Select course</option>
+                    <option>Data Analytics Bootcamp — ₹3,999</option>
+                    <option>Advanced Power BI — ₹1,999</option>
+                    <option>Python for Data — ₹1,999</option>
+                    <option>SQL Mastery — ₹999</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label for="r-how">How did you hear about us?</label>
+                <select id="r-how">
+                  <option value="" disabled selected>Select one</option>
+                  <option>YouTube</option>
+                  <option>Instagram</option>
+                  <option>Telegram</option>
+                  <option>Friend / Referral</option>
+                  <option>Google Search</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="r-goal">Your Career Goal (optional)</label>
+                <textarea id="r-goal" rows="3" placeholder="Tell us briefly about what you want to achieve after this course..."></textarea>
+              </div>
 
-        <div class="register-illustration">
-          <img src="./assets/register-hero.webp" alt="Registration Illustration" />
-        </div>
-      </div>
-    </section>
+              <button class="btn-reg-submit" onclick="handleRegister(event)">
+                <i class="fa-solid fa-rocket"></i> Confirm Enrollment
+              </button>
+              <div class="reg-success" id="regSuccess">
+                <i class="fa-solid fa-circle-check"></i>
+                <div>
+                  <strong>Enrollment Received!</strong>
+                  <p>We'll WhatsApp you within 24 hours with payment and next steps. Welcome to VirTech Academy!</p>
+                </div>
+              </div>
+              <p class="reg-note"><i class="fa-solid fa-shield-halved"></i> Your information is 100% secure and never shared.</p>
+            </div>
+          </div>
 
-    <!-- Footer -->
-      <div id="footer"></div>
-      <!-- <footer class="site-footer">
-      <div class="container footer-top">
-    
-        <div class="footer-col footer-brand">
-          <div class="logo-circle">VT</div>
-          <div>
+          <!-- Right — Info -->
+          <div class="register-info-box">
+            <div class="info-highlight">
+              <div class="price-tag">
+                <span class="price-main">₹3,999</span>
+                <span class="price-was">Was ₹6,999</span>
+                <span class="price-save">Save ₹3,000</span>
+              </div>
+              <p class="info-course-name">Data Analytics Bootcamp</p>
+            </div>
+
+            <div class="what-included">
+              <h4>What's Included</h4>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> 8 Weeks of Live Classes</li>
+                <li><i class="fa-solid fa-check"></i> Lifetime Recorded Videos</li>
+                <li><i class="fa-solid fa-check"></i> Excel, SQL, Power BI, Python</li>
+                <li><i class="fa-solid fa-check"></i> Capstone Portfolio Project</li>
+                <li><i class="fa-solid fa-check"></i> Telegram Community Access</li>
+                <li><i class="fa-solid fa-check"></i> Certificate of Completion</li>
+                <li><i class="fa-solid fa-check"></i> 100% Telugu Instruction</li>
+              </ul>
+            </div>
+
+            <div class="batch-info">
+              <h4><i class="fa-solid fa-calendar-days"></i> Batch Details</h4>
+              <div class="batch-row"><span>Start Date</span><strong>TBA — Batch 2</strong></div>
+              <div class="batch-row"><span>Schedule</span><strong>Weekends (Sat & Sun)</strong></div>
+              <div class="batch-row"><span>Duration</span><strong>8 Weeks</strong></div>
+              <div class="batch-row"><span>Mode</span><strong>Online (Live + Recorded)</strong></div>
+              <div class="batch-row"><span>Seats Left</span><strong class="seats">🔴 Only 15 Seats!</strong></div>
+            </div>
+
+            <div class="guarantee-box">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>7-Day Money Back Guarantee</strong>
+                <p>Not satisfied after Week 1? Full refund, no questions asked.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <div class="logo-circle">VT</div>
             <div class="brand-name">VirTech Academy</div>
-            <div class="muted">Telugu-first Data Analytics</div>
+            <p>Telugu-first data analytics education for graduates and working professionals.</p>
+            <div class="socials">
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Quick Links</strong>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="courses.html">Courses</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Courses</strong>
+            <div class="footer-links">
+              <a href="courses.html">Data Analytics Bootcamp</a>
+              <a href="courses.html">Advanced Power BI</a>
+              <a href="courses.html">Python for Data</a>
+              <a href="courses.html">SQL Mastery</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Contact</strong>
+            <div class="footer-links">
+              <a href="mailto:info@virtech.academy"><i class="fa-solid fa-envelope" style="margin-right:6px;"></i>info@virtech.academy</a>
+              <a href="tel:+919000000000"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>+91 90000 00000</a>
+            </div>
           </div>
         </div>
-
-        
-        <div class="footer-col">
-          <strong>Quick Links</strong>
-          <div class="footer-links">
-            <a href="/index.html">Home</a>
-            <a href="/courses.html">Courses</a>
-            <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-          </div>
-        </div>
-
-      
-        <div class="footer-col">
-          <strong>Contact</strong>
-          <div class="muted">info@virtech.example</div>
-          <div class="muted">+91 90000 00000</div>
-          <div class="socials">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        <div class="footer-bottom">
+          <span>© 2025 VirTech Academy. All rights reserved.</span>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
           </div>
         </div>
       </div>
+    </footer>
 
-      <div class="footer-about">
-        <strong>About</strong>
-        <p>
-          We train Telugu-speaking students in data analytics — practical,
-          affordable, and project-focused.
-        </p>
-      </div>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+      });
 
-     
-      <div class="footer-bottom">
-        <div>© 2025 VirTech Academy</div>
-        <div class="footer-policies">
-          <a href="/terms.html">Terms & Conditions</a>
-          <a href="/privacy.html">Privacy Policy</a>
-        </div>
-      </div>
-    </footer> -->
-<script type="module">
-      import { includeHTML } from "./scripts/include.js";
-      includeHTML("#navbar", "./partials/header.html");
-      includeHTML("#footer", "./partials/footer.html");
-    </script>  
-
-</body>
+      function handleRegister(e) {
+        e.preventDefault();
+        const name = document.getElementById('r-name').value;
+        const email = document.getElementById('r-email').value;
+        const phone = document.getElementById('r-phone').value;
+        if (!name || !email || !phone) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+        document.getElementById('regSuccess').style.display = 'flex';
+        document.querySelector('.btn-reg-submit').style.display = 'none';
+      }
+    </script>
+  </body>
 </html>

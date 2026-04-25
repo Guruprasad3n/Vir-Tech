@@ -2,267 +2,249 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact — VirTech Academy</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a2e0f1a2b8.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="description" content="Get in touch with VirTech Academy. Questions about enrollment, courses, or programs? We're here to help." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <!-- <link rel="stylesheet" href="./Styles/Modal.css" /> -->
+    <link rel="stylesheet" href="./Styles/contact.css" />
   </head>
-
   <body>
-    <!-- <header ader class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
+
+    <!-- ── Navbar ── -->
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
           <div class="logo">VT</div>
           <div class="brand-text">
             <div class="brand-title">VirTech Academy</div>
             <div class="brand-sub">Telugu-first Data Analytics</div>
           </div>
-        </div>
-
+        </a>
         <nav class="nav">
-          <a href="/index.html">Home</a>
-          <a href="/courses.html">Courses</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
-        </nav>
-
-        <div class="cta-area">
-          <button class="btn reserve" id="openReserveBtn">
-            <i class="fa-solid fa-ticket-simple"></i> Reserve Seat
-          </button>
-        </div>
-      </div>
-    </header> -->
-
-   <div id="navbar"></div>
-    <main class="container">
-      <section class="card">
-        <h1>Contact Us</h1>
-        <p class="muted">
-          Have questions about our programs or enrollment? Reach out anytime —
-          we’d love to help.
-        </p>
-
-        <div class="grid contact-grid">
-          <div class="card">
-            <i class="fa-solid fa-envelope accent"></i>
-            <h3>Email</h3>
-            <p>info@virtech.example</p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-phone accent"></i>
-            <h3>Phone</h3>
-            <p>+91 90000 00000</p>
-          </div>
-
-          <div class="card">
-            <i class="fa-solid fa-map-marker-alt accent"></i>
-            <h3>Location</h3>
-            <p>Hyderabad, India (Online Programs Worldwide)</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
- <!-- <footer class="site-footer">
-  <div class="container footer-top">
-
-    <div class="footer-col footer-brand">
-      <div class="logo-circle">VT</div>
-      <div>
-        <div class="brand-name">VirTech Academy</div>
-        <div class="muted">Telugu-first Data Analytics</div>
-      </div>
-    </div>
-
-  
-    <div class="footer-col">
-      <strong>Quick Links</strong>
-      <div class="footer-links">
-        <a href="/index.html">Home</a>
-        <a href="/courses.html">Courses</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-      </div>
-    </div>
-
-  
-    <div class="footer-col">
-      <strong>Contact</strong>
-      <div class="muted">info@virtech.example</div>
-      <div class="muted">+91 90000 00000</div>
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="footer-about">
-    <strong>About</strong>
-    <p>
-      We train Telugu-speaking students in data analytics — practical,
-      affordable, and project-focused.
-    </p>
-  </div>
-
- 
-  <div class="footer-bottom">
-    <div>© 2025 VirTech Academy</div>
-    <div class="footer-policies">
-      <a href="/terms.html">Terms & Conditions</a>
-      <a href="/privacy.html">Privacy Policy</a>
-    </div>
-  </div>
-</footer> -->
-
-
-<div id="footer"></div>
-    <!-- Modal -->
-    <!-- <div id="reserveModal" class="modal-overlay" aria-hidden="true">
-      <div class="modal-card" role="dialog" aria-modal="true">
-        <button class="modal-close" id="modalClose">&times;</button>
-        <h3>Reserve Your Seat</h3>
-        <form id="reserveForm" class="modal-form">
-          <label for="r_name">Full Name *</label>
-          <input id="r_name" name="name" required />
-
-          <label for="r_email">Email *</label>
-          <input id="r_email" name="email" type="email" required />
-
-          <label for="r_phone">Phone / WhatsApp *</label>
-          <input id="r_phone" name="phone" required />
-
-          <label for="r_location">Location (City)</label>
-          <input id="r_location" name="location" />
-
-          <label for="r_message">Message (optional)</label>
-          <textarea id="r_message" name="message" rows="3"></textarea>
-
-          <div class="form-row">
-            <input id="r_agree" type="checkbox" required />
-            <label for="r_agree" class="muted small">
-              I agree to the
-              <a href="/terms.html" target="_blank">Terms & Conditions</a>
-            </label>
-          </div>
-
-          <div class="modal-actions">
-            <button type="submit" class="btn primary">Submit & Reserve</button>
-            <button type="button" class="btn ghost" id="modalCancel">
-              Cancel
-            </button>
-          </div>
-        </form>
-      </div>
-    </div> -->
-
-    <script src="./faq.js"></script>
-    <script src="./script.js"></script>
-    <script type="module">
-      import { includeHTML } from "./scripts/include.js";
-      includeHTML("#navbar", "./partials/header.html");
-      includeHTML("#footer", "./partials/footer.html");
-    </script>
-  </body>
-</html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact — VirTech Academy</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-p..."
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="brand">
-          <div class="logo">VT</div>
-          <div class="brand-text">
-            <div class="brand-title">VirTech Academy</div>
-            <div class="brand-sub">Telugu-first Data Analytics</div>
-          </div>
-        </div>
-        <nav class="nav">
-          <a href="/index.html">Home</a><a href="/courses.html">Courses</a
-          ><a href="/about.html">About</a>
-          <a href="/contact.html">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
         </nav>
         <div class="cta-area">
-          <a class="btn reserve" href="/index.html#reserve">Reserve Seat</a>
+          <a href="register.html" class="btn primary">Reserve Seat</a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html" class="btn primary" style="margin-top:8px;">Reserve Seat</a>
+      </nav>
     </header>
 
-    <main class="container">
-      <h1>Contact Us</h1>
-      <p class="muted">
-        Have a question? Drop a message and we'll respond within 24 hours.
-      </p>
+    <main>
 
-      <section class="card">
-        <form id="contactForm">
-          <label for="c_name">Name</label>
-          <input id="c_name" required />
-
-          <label for="c_email">Email</label>
-          <input id="c_email" type="email" required />
-
-          <label for="c_phone">Phone</label>
-          <input id="c_phone" />
-
-          <label for="c_message">Message</label>
-          <textarea id="c_message" rows="4"></textarea>
-
-          <div style="margin-top: 12px">
-            <button class="btn primary" type="submit">Send Message</button>
-          </div>
-        </form>
+      <!-- ── Page Hero ── -->
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-label">Get in Touch</span>
+          <h1>We're Here to Help</h1>
+          <p>Questions about enrollment, courses, or anything else? Send us a message and we'll reply within 24 hours.</p>
+        </div>
       </section>
+
+      <!-- ── Contact Info Cards ── -->
+      <section class="contact-info-section">
+        <div class="container">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon email-icon"><i class="fa-solid fa-envelope"></i></div>
+              <h4>Email Us</h4>
+              <p>We respond to every email within 24 hours on business days.</p>
+              <a href="mailto:info@virtech.academy" class="contact-link">info@virtech.academy</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon phone-icon"><i class="fa-solid fa-phone"></i></div>
+              <h4>Call / WhatsApp</h4>
+              <p>Available Mon–Sat, 9 AM to 7 PM IST. WhatsApp preferred for quick answers.</p>
+              <a href="https://wa.me/919000000000" class="contact-link">+91 90000 00000</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon tg-icon"><i class="fa-brands fa-telegram"></i></div>
+              <h4>Telegram Community</h4>
+              <p>Join our 2,000+ member group for real-time answers and peer support.</p>
+              <a href="#" class="contact-link">@VirTechAcademy</a>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon loc-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h4>Based In</h4>
+              <p>Headquartered in Hyderabad. All courses delivered online nationwide.</p>
+              <span class="contact-link">Hyderabad, Telangana</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Contact Form ── -->
+      <section class="contact-form-section">
+        <div class="container contact-layout">
+
+          <div class="form-side">
+            <span class="section-label">Send a Message</span>
+            <h2 class="section-title">Drop Us a Note</h2>
+            <p class="section-sub">Whether you have a question about fees, curriculum, or batch timing — fill in the form and we'll get back to you.</p>
+
+            <div class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Full Name *</label>
+                  <input type="text" id="c-name" placeholder="Your full name" required />
+                </div>
+                <div class="form-group">
+                  <label for="c-email">Email *</label>
+                  <input type="email" id="c-email" placeholder="your@email.com" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-phone">Phone / WhatsApp</label>
+                  <input type="tel" id="c-phone" placeholder="+91 XXXXX XXXXX" />
+                </div>
+                <div class="form-group">
+                  <label for="c-subject">Subject *</label>
+                  <select id="c-subject">
+                    <option value="" disabled selected>Select a topic</option>
+                    <option>Course Enquiry</option>
+                    <option>Enrollment & Fees</option>
+                    <option>Technical Support</option>
+                    <option>Partnership / Collaboration</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group full">
+                <label for="c-message">Message *</label>
+                <textarea id="c-message" rows="5" placeholder="Tell us what's on your mind — we'll reply in Telugu or English, your choice!" required></textarea>
+              </div>
+              <button class="btn-submit" onclick="handleSubmit(event)">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-success" id="formSuccess">
+                <i class="fa-solid fa-circle-check"></i> Thank you! We'll be in touch within 24 hours.
+              </div>
+            </div>
+          </div>
+
+          <div class="info-side">
+            <div class="info-box">
+              <h4><i class="fa-solid fa-clock"></i> Response Times</h4>
+              <ul>
+                <li><strong>Email</strong> — Within 24 hours</li>
+                <li><strong>WhatsApp</strong> — Within 4 hours (9 AM–7 PM)</li>
+                <li><strong>Telegram</strong> — Usually within 1 hour</li>
+              </ul>
+            </div>
+            <div class="info-box">
+              <h4><i class="fa-solid fa-circle-question"></i> Common Questions</h4>
+              <ul>
+                <li><a href="courses.html#faq">Is Telugu instruction available?</a></li>
+                <li><a href="courses.html#faq">What if I miss a class?</a></li>
+                <li><a href="courses.html#faq">Do you offer refunds?</a></li>
+                <li><a href="courses.html#faq">Is EMI available?</a></li>
+              </ul>
+            </div>
+            <div class="social-box">
+              <h4>Follow Us</h4>
+              <div class="contact-socials">
+                <a href="#" class="social-btn youtube"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                <a href="#" class="social-btn telegram"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                <a href="#" class="social-btn instagram"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#" class="social-btn linkedin"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
+    <!-- ── Footer ── -->
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>© 2025 VirTech Academy</div>
-        <div class="footer-links">
-          <a href="/terms.html">Terms</a><a href="/privacy.html">Privacy</a>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand-col">
+            <div class="logo-circle">VT</div>
+            <div class="brand-name">VirTech Academy</div>
+            <p>Telugu-first data analytics education for graduates and working professionals across Andhra Pradesh and Telangana.</p>
+            <div class="socials">
+              <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Quick Links</strong>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="courses.html">Courses</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+              <a href="register.html">Enroll Now</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Courses</strong>
+            <div class="footer-links">
+              <a href="courses.html">Data Analytics Bootcamp</a>
+              <a href="courses.html">Advanced Power BI</a>
+              <a href="courses.html">Python for Data</a>
+              <a href="courses.html">SQL Mastery</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <strong>Contact</strong>
+            <div class="footer-links">
+              <a href="mailto:info@virtech.academy"><i class="fa-solid fa-envelope" style="margin-right:6px;"></i>info@virtech.academy</a>
+              <a href="tel:+919000000000"><i class="fa-solid fa-phone" style="margin-right:6px;"></i>+91 90000 00000</a>
+              <a href="#"><i class="fa-solid fa-location-dot" style="margin-right:6px;"></i>Hyderabad, India</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2025 VirTech Academy. All rights reserved.</span>
+          <div class="footer-policies">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
+          </div>
         </div>
       </div>
     </footer>
 
     <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert("Thanks! We received your message. We will contact you soon.");
-          this.reset();
-        });
+      const hamburger = document.getElementById('hamburger');
+      const mobileNav = document.getElementById('mobile-nav');
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+      });
+
+      function handleSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById('c-name').value;
+        const email = document.getElementById('c-email').value;
+        const msg = document.getElementById('c-message').value;
+        if (!name || !email || !msg) {
+          alert('Please fill in all required fields.');
+          return;
+        }
+        document.getElementById('formSuccess').style.display = 'flex';
+        setTimeout(() => document.getElementById('formSuccess').style.display = 'none', 5000);
+      }
     </script>
   </body>
-</html> -->
+</html>

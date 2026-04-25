@@ -1,129 +1,187 @@
-/* Background and Layout */
+/* ============================================
+   VirTech Academy — Register Page Styles
+   ============================================ */
+
 .register-section {
-  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  min-height: calc(100vh - 76px);
+  padding: 40px 20px 60px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(120deg, #4f46e5, #06b6d4);
-  color: #111827;
-  padding: 80px 20px;
-}
-
-.register-container {
-  display: flex;
-  align-items: stretch;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 18px;
-  overflow: hidden;
-  width: 100%;
-  max-width: 1100px;
-}
-
-/* Form Section */
-.register-form {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 50px 60px;
-  display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 
-.register-form h1 {
-  font-size: 2rem;
-  color: #111827;
-  margin-bottom: 10px;
-}
-
-.register-form .subtitle {
-  color: #6b7280;
-  margin-bottom: 40px;
-}
-
-/* Grid Form Layout */
-.form-grid {
+.register-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px 30px;
+  grid-template-columns: 1fr 360px;
+  gap: 28px;
+  width: 100%;
+  max-width: 1060px;
+  align-items: start;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
+/* ── Form Box ── */
+.register-form-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 44px;
+  box-shadow: 0 20px 60px rgba(15,23,42,0.18);
 }
 
-.form-group label {
-  font-weight: 600;
-  color: #374151;
-  margin-bottom: 6px;
+.register-header { margin-bottom: 30px; }
+.register-header h1 { font-size: 1.9rem; font-weight: 800; margin: 10px 0 8px; color: var(--dark); }
+.register-header p { color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+.register-header .section-label {
+  background: rgba(79,70,229,0.08);
+  color: var(--accent);
+  border: none;
 }
 
+.reg-form { display: flex; flex-direction: column; gap: 16px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: 1/-1; }
+.form-group label { font-weight: 600; font-size: 13.5px; color: #374151; }
 .form-group input,
-.form-group select {
+.form-group select,
+.form-group textarea {
   padding: 12px 14px;
   border-radius: 8px;
-  border: 1px solid #d1d5db;
-  font-size: 15px;
+  border: 1.5px solid #e5e7eb;
+  font-family: var(--font);
+  font-size: 14.5px;
+  color: var(--dark);
+  background: #f9fafb;
   outline: none;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  resize: vertical;
 }
-
 .form-group input:focus,
-.form-group select:focus {
-  border-color: #4f46e5;
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+  background: #fff;
 }
 
-/* Button */
-.btn-submit {
-  margin-top: 30px;
-  background: linear-gradient(90deg, #4f46e5, #06b6d4);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 14px 22px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.btn-submit:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-/* Illustration Section */
-.register-illustration {
-  flex: 1;
+.btn-reg-submit {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: transparent;
-}
-
-.register-illustration img {
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  max-width: 550px;
-  height: auto;
-  object-fit: contain;
+  background: var(--accent-gradient);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 16px 24px;
+  font-family: var(--font);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 4px;
+}
+.btn-reg-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(79,70,229,0.35); }
+
+.reg-success {
+  display: none;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(16,185,129,0.08);
+  border: 1.5px solid rgba(16,185,129,0.3);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  margin-top: 4px;
+}
+.reg-success i { color: #10b981; font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+.reg-success strong { display: block; color: #059669; font-size: 15px; margin-bottom: 4px; }
+.reg-success p { color: var(--muted); font-size: 13.5px; margin: 0; }
+
+.reg-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+.reg-note i { color: var(--accent); }
+
+/* ── Info Box ── */
+.register-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-/* Responsive */
+.info-highlight {
+  background: rgba(255,255,255,0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 16px;
+  padding: 24px 22px;
+  text-align: center;
+  color: #fff;
+}
+.price-tag { display: flex; align-items: baseline; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.price-main { font-size: 2.4rem; font-weight: 800; color: #fff; }
+.price-was { font-size: 1rem; color: rgba(255,255,255,0.6); text-decoration: line-through; }
+.price-save {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+.info-course-name { color: rgba(255,255,255,0.85); font-size: 14px; font-weight: 600; margin-top: 8px; }
+
+.what-included,
+.batch-info,
+.guarantee-box {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 16px;
+  padding: 22px 20px;
+  color: #fff;
+}
+.what-included h4,
+.batch-info h4 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.what-included ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+.what-included li { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.9); }
+.what-included li i { color: #a5f3fc; font-size: 12px; flex-shrink: 0; }
+
+.batch-row { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 13.5px; }
+.batch-row:last-child { border-bottom: none; }
+.batch-row span { color: rgba(255,255,255,0.7); }
+.batch-row strong { color: #fff; text-align: right; }
+.seats { color: #fde68a !important; }
+
+.guarantee-box { display: flex; gap: 14px; align-items: flex-start; }
+.guarantee-box i { font-size: 1.6rem; color: #a5f3fc; flex-shrink: 0; margin-top: 2px; }
+.guarantee-box strong { display: block; font-size: 14px; margin-bottom: 4px; }
+.guarantee-box p { font-size: 13px; color: rgba(255,255,255,0.8); margin: 0; line-height: 1.5; }
+
+/* ── Responsive ── */
 @media (max-width: 900px) {
-  .register-container {
-    flex-direction: column-reverse;
-  }
-
-  .register-form {
-    padding: 40px 30px;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .register-illustration img {
-    max-width: 350px;
-  }
+  .register-wrapper { grid-template-columns: 1fr; }
+  .register-info-box { order: -1; display: grid; grid-template-columns: 1fr 1fr; }
+  .info-highlight { grid-column: 1/-1; }
+  .register-form-box { padding: 30px 24px; }
+}
+@media (max-width: 600px) {
+  .register-info-box { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .register-form-box { padding: 24px 18px; }
+  .register-section { padding: 24px 14px 40px; }
 }
