@@ -276,3 +276,23 @@ img { max-width: 100%; display: block; }
   .footer-bottom { flex-direction: column; text-align: center; }
   section { padding: 40px 0; }
 }
+
+/* ── Logo Image ── */
+.logo-img {
+  height: 46px;
+  width: 46px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 6px rgba(79,70,229,0.18));
+}
+.footer-logo-img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 12px;
+  filter: brightness(1.1);
+}

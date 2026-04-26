@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./Styles/register.css" />
+  
+    <!-- ── SEO Meta ── -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="VirTech Academy" />
+    <meta name="keywords" content="enroll data analytics Telugu, register VirTech Academy, data course enrollment Telugu, data analytics seat reservation" />
+    <link rel="canonical" href="https://virtechacademy.in/register.html" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <meta name="theme-color" content="#4f46e5" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="VirTech Academy" />
+    <meta property="og:title" content="Enroll Now | VirTech Academy — Data Analytics Course in Telugu" />
+    <meta property="og:description" content="Reserve your seat in VirTech Academy's Complete Data Analytics Course — 8 weeks, live + recorded, taught in Telugu. Only ₹3,999. Batch 2 open now." />
+    <meta property="og:image" content="https://virtechacademy.in/assets/logo-full.png" />
+    <meta property="og:url" content="https://virtechacademy.in/register.html" />
+    <meta property="og:locale" content="en_IN" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Enroll Now | VirTech Academy — Data Analytics Course in Telugu" />
+    <meta name="twitter:description" content="Reserve your seat in VirTech Academy's Complete Data Analytics Course — 8 weeks, live + recorded, taught in Telugu. Only ₹3,999. Batch 2 open now." />
+    <meta name="twitter:image" content="https://virtechacademy.in/assets/logo-full.png" />
   </head>
   <body>
 
@@ -16,7 +40,7 @@
     <header class="site-header" id="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html">
-          <div class="logo">VT</div>
+          <img src="./assets/logo-icon.png" alt="VirTech Academy Logo" class="logo-img" />
           <div class="brand-text">
             <div class="brand-title">VirTech Academy</div>
             <div class="brand-sub">Telugu-first Data Analytics</div>
@@ -121,13 +145,31 @@
               <button class="btn-reg-submit" onclick="handleRegister(event)">
                 <i class="fa-solid fa-rocket"></i> Confirm Enrollment
               </button>
+              <!-- Success Message -->
               <div class="reg-success" id="regSuccess">
-                <i class="fa-solid fa-circle-check"></i>
-                <div>
-                  <strong>Enrollment Received!</strong>
-                  <p>We'll WhatsApp you within 24 hours with payment and next steps. Welcome to VirTech Academy!</p>
+                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                <div class="success-body">
+                  <strong>🎉 Enrollment Received, <span class="success-name"></span>!</strong>
+                  <p>You've registered for: <em class="success-course"></em></p>
+                  <p>Our team will WhatsApp you at the number you provided within <strong>24 hours</strong> with payment details and next steps.</p>
+                  <div class="success-next">
+                    <span><i class="fa-brands fa-telegram"></i> Join our Telegram group for instant updates</span>
+                    <a href="https://t.me/VirTechAcademy" target="_blank" class="btn primary" style="margin-top:12px;font-size:13px;padding:9px 18px;">
+                      <i class="fa-brands fa-telegram"></i> Join Telegram
+                    </a>
+                  </div>
                 </div>
               </div>
+
+              <!-- Error Message -->
+              <div class="reg-error" id="regError">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <div>
+                  <strong>Something went wrong</strong>
+                  <p>Please try again or WhatsApp us directly: <a href="https://wa.me/919000000000">+91 90000 00000</a></p>
+                </div>
+              </div>
+
               <p class="reg-note"><i class="fa-solid fa-shield-halved"></i> Your information is 100% secure and never shared.</p>
             </div>
           </div>
@@ -183,7 +225,7 @@
       <div class="footer-inner">
         <div class="footer-top">
           <div class="footer-brand-col">
-            <div class="logo-circle">VT</div>
+            <img src="./assets/logo-icon.png" alt="VirTech Academy" class="footer-logo-img" />
             <div class="brand-name">VirTech Academy</div>
             <p>Telugu-first data analytics education for graduates and working professionals.</p>
             <div class="socials">
@@ -222,15 +264,16 @@
         <div class="footer-bottom">
           <span>© 2025 VirTech Academy. All rights reserved.</span>
           <div class="footer-policies">
-            <a href="./Legal/privacy.html">Privacy Policy</a>
-            <a href="./Legal/terms.html">Terms of Service</a>
-            <a href="./Legal/refund.html">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund Policy</a>
           </div>
         </div>
       </div>
     </footer>
 
     <script>
+      // ── Hamburger ──
       const hamburger = document.getElementById('hamburger');
       const mobileNav = document.getElementById('mobile-nav');
       hamburger.addEventListener('click', () => {
@@ -238,18 +281,110 @@
         mobileNav.classList.toggle('open');
       });
 
-      function handleRegister(e) {
+      // =======================================================
+      //  STEP 1: After setting up Google Apps Script,
+      //  paste your Web App URL below (replace the placeholder)
+      // =======================================================
+      const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwaQzYuW6gqRSW1PYVylvtQeX15nRB6aIQ6xr9wSQWExhPEfwp0zsnugWJaKb_ULZxl/exec';
+
+      // ── Hamburger already handled above ──
+
+      // ── Validation helpers ──
+      function showError(id, msg) {
+        const el = document.getElementById(id);
+        el.classList.add('field-error');
+        let old = el.parentElement.querySelector('.err-msg');
+        if (old) old.remove();
+        const err = document.createElement('span');
+        err.className = 'err-msg';
+        err.textContent = msg;
+        el.parentElement.appendChild(err);
+      }
+
+      function clearErrors() {
+        document.querySelectorAll('.field-error').forEach(el => el.classList.remove('field-error'));
+        document.querySelectorAll('.err-msg').forEach(el => el.remove());
+      }
+
+      function isValidEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+      function isValidPhone(p) { return /^[+]?[\d\s\-]{10,15}$/.test(p); }
+
+      // ── Main submit ──
+      async function handleRegister(e) {
         e.preventDefault();
-        const name = document.getElementById('r-name').value;
-        const email = document.getElementById('r-email').value;
-        const phone = document.getElementById('r-phone').value;
-        if (!name || !email || !phone) {
-          alert('Please fill in all required fields.');
+        clearErrors();
+
+        const name   = document.getElementById('r-name').value.trim();
+        const email  = document.getElementById('r-email').value.trim();
+        const phone  = document.getElementById('r-phone').value.trim();
+        const city   = document.getElementById('r-city').value.trim();
+        const qual   = document.getElementById('r-qual').value;
+        const course = document.getElementById('r-course').value;
+        const how    = document.getElementById('r-how').value;
+        const goal   = document.getElementById('r-goal').value.trim();
+
+        // ── Validate ──
+        let ok = true;
+        if (!name)              { showError('r-name',   'Please enter your full name');        ok = false; }
+        if (!email)             { showError('r-email',  'Please enter your email address');    ok = false; }
+        else if (!isValidEmail(email)) { showError('r-email', 'Enter a valid email address'); ok = false; }
+        if (!phone)             { showError('r-phone',  'Please enter your WhatsApp number'); ok = false; }
+        else if (!isValidPhone(phone)) { showError('r-phone', 'Enter a valid phone number'); ok = false; }
+        if (!city)              { showError('r-city',   'Please enter your city');            ok = false; }
+        if (!qual)              { showError('r-qual',   'Please select your qualification');  ok = false; }
+        if (!course)            { showError('r-course', 'Please select a course');            ok = false; }
+        if (!ok) return;
+
+        // ── Loading state ──
+        const btn = document.querySelector('.btn-reg-submit');
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>&nbsp; Submitting...';
+        document.getElementById('regError').style.display = 'none';
+
+        const payload = {
+          name, email, phone, city,
+          qualification: qual,
+          course, source: how, goal,
+          timestamp: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+        };
+
+        // ── Check URL is set ──
+        if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbwaQzYuW6gqRSW1PYVylvtQeX15nRB6aIQ6xr9wSQWExhPEfwp0zsnugWJaKb_ULZxl/exec') {
+          // URL not configured — show setup warning instead of fake success
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fa-solid fa-rocket"></i> Confirm Enrollment';
+          const errBox = document.getElementById('regError');
+          errBox.style.display = 'flex';
+          errBox.querySelector('strong').textContent = 'Setup Incomplete';
+          errBox.querySelector('p').innerHTML = 'The Google Apps Script URL is not configured yet. Please follow the setup steps in <strong>Code.gs</strong> and paste the URL in register.html.';
           return;
         }
-        document.getElementById('regSuccess').style.display = 'flex';
-        document.querySelector('.btn-reg-submit').style.display = 'none';
+
+        try {
+          // ── Send to Google Apps Script ──
+          // Important: NO Content-Type header + mode no-cors = works correctly with Apps Script
+          await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(payload)
+          });
+
+          // ── Success (no-cors means we can't read response, but data was sent) ──
+          btn.style.display = 'none';
+          const successBox = document.getElementById('regSuccess');
+          successBox.style.display = 'flex';
+          successBox.querySelector('.success-name').textContent   = name.split(' ')[0];
+          successBox.querySelector('.success-course').textContent = course;
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+        } catch (err) {
+          // ── Network error ──
+          btn.disabled = false;
+          btn.innerHTML = '<i class="fa-solid fa-rocket"></i> Confirm Enrollment';
+          document.getElementById('regError').style.display = 'flex';
+          console.error('Submission error:', err);
+        }
       }
-    </script>
+        </script>
   </body>
 </html>
